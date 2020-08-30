@@ -18,7 +18,7 @@ body {
     background-size: 100% 100%;
   }
 
-  .navigation-checkbox{
+.navigation-checkbox{
     visibility: hidden;
 }
 
@@ -46,6 +46,7 @@ body {
     width:100%;
     align-items: center;
     justify-content: space-evenly;
+    height:auto;
 }
 .nav-bar__btn:link,
 .nav-bar__btn:visited {
@@ -63,6 +64,15 @@ body {
     color: #02133d;
 }
 
+/*drop-down download*/
+.drop-down-content{
+    display:none;
+    position:absolute;
+    background:white;
+    width: 12rem;
+    font-size:0.7rem;
+} 
+
 .download-btn:link,
 .download-btn:visited{
     text-decoration: none;
@@ -74,7 +84,16 @@ body {
     border-radius: 3px;
 }
 
-.download-btn:hover {
+
+.drop-down:hover .drop-down-content {
+    display:block;
+}
+
+.drop-down:hover .drop-down-content  .dropdown-item:hover {
+    background-color:#ccd2f8;
+}
+
+.drop-down:hover .download-btn{
     background-color:#00278a;
 }
 
@@ -292,9 +311,6 @@ body {
         display:flex;
         width:100vw;
         flex-direction: column;
-        
-
     }
-    
 
 }
