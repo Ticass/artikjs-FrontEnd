@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artiks | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cursor.css">
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Mukta:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 </head>
@@ -43,8 +44,8 @@
     <main class="main-container">
         <div class="welcome-message-container">
             <h1>Welcome To Artik.js !</h1>
-            <p class="description">A modern and simple javascript libary to replace jquery !</p>
-            <p class="small-text">Artik.js is and will always be free</p>
+            <p class="description">A <span class="text-emphasis">modern</span> and <span class="text-emphasis">simple</span> <i><b>Javascript library</b></i> to replace <b>Jquery !</b></p>
+            <p class="small-text">Artik.js is and will always be <span class="text-underline text-emphasis">free</span></p>
             <a class="demo-button" href="form.html" role="button">Try a demo !</a>
         </div>
         <div class="progress-container">
@@ -69,10 +70,61 @@
         </div>
     </main>
 
+    <!-- Penguin Cursor -->
+    <div id="penguin-cursor">
+        <svg width="70" height="70" viewBox="0 0 499 499" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="Penguin">
+                <g class="body">
+                <path class="Vector 1" d="M415.182 80.1719C388.158 19.187 220.626 -61.8632 125.789 74.3934C67.4868 158.157 132.168 236.5 125.789 251C77.5846 360.568 100.37 458.46 176.651 487.478C176.651 487.478 376.766 535.507 403.514 435.445C410.687 408.61 419.229 330.041 390.5 264.5C419.844 220.992 442.206 141.157 415.182 80.1719Z" fill="#061a72"/>
+                <path class="Vector 3" d="M169.995 263.691C165.622 262.33 146.391 251.108 146.391 177.175C146.391 152.307 169.387 87.3902 252.391 115.675C338.887 75.8902 359.891 163.675 359.891 163.675C371.391 243.435 338.891 263.675 338.891 263.675C338.891 263.675 419.891 439.2 310.739 467.573C76.8909 528.359 146.391 263.675 169.391 263.675C169.62 263.675 169.821 263.681 169.995 263.691Z" fill="white" stroke="#FFD9F2"/>
+                </g>
+                <g class="mouth">
+                <path d="M276.212 229.898C262.866 246.53 235.498 267.93 225.391 228.675H277.175C277.054 229.024 276.721 229.437 276.212 229.898Z" fill="#F9E217"/>
+                <path d="M225.391 228.675C235.748 268.9 264.229 245.435 277.175 228.675M225.391 228.675H277.175M225.391 228.675C230.391 234.175 239.009 242.176 245.891 242.176C253.391 242.176 275.96 232.174 277.175 228.675" stroke="white" stroke-width="2"/>
+                </g>
+                <g class="left-eye">
+                <ellipse class="Ellipse 1" cx="206.988" cy="206.089" rx="21.1845" ry="22.0747" fill="#0E0D0D"/>
+                <g class="Eye">
+                <path class="Vector 6" d="M198.391 193.699C196.959 196.562 196.891 198.532 197.391 200.699C197.498 201.199 197.391 202.199 199.391 201.699C201.391 201.199 204.391 192.699 202.391 191.199C200.391 189.699 199.391 191.699 198.391 193.698L198.391 193.699Z" fill="white" stroke="white"/>
+                <g class="Vector 5">
+                <path d="M193.169 195.231C189.969 196.031 183.169 208.731 188.169 218.731C190.169 222.731 200.669 228.231 205.169 228.731C211.63 229.449 225.974 218.123 221.669 215.731C217.169 213.231 202.978 225.287 196.669 221.231C189.669 216.731 197.169 194.231 193.169 195.231Z" fill="white"/>
+                <path d="M196.169 215.231C194.169 212.031 195.336 207.898 196.169 206.231C196.169 207.564 196.469 209.831 197.669 212.231C199.169 215.231 201.169 215.231 202.169 215.231C207.268 215.231 211.669 210.731 209.669 214.231C208.069 217.031 204.669 218.231 203.669 218.231C202.003 218.564 198.169 218.431 196.169 215.231Z" fill="white"/>
+                <path d="M193.169 195.231C189.969 196.031 183.169 208.731 188.169 218.731C190.169 222.731 200.669 228.231 205.169 228.731C211.63 229.449 225.974 218.123 221.669 215.731C217.169 213.231 202.978 225.287 196.669 221.231C189.669 216.731 197.169 194.231 193.169 195.231Z" stroke="white"/>
+                <path d="M196.169 215.231C194.169 212.031 195.336 207.898 196.169 206.231C196.169 207.564 196.469 209.831 197.669 212.231C199.169 215.231 201.169 215.231 202.169 215.231C207.268 215.231 211.669 210.731 209.669 214.231C208.069 217.031 204.669 218.231 203.669 218.231C202.003 218.564 198.169 218.431 196.169 215.231Z" stroke="white"/>
+                </g>
+                </g>
+                </g>
+                <path class="right-arm" d="M369 270.436C385.24 239.699 492.844 178.013 498.548 227.675C506.199 294.289 404.728 262.151 369 270.436Z" fill="#061a72"/>
+                <g class="right-eye">
+                <ellipse class="Ellipse 2" cx="298.788" cy="206.089" rx="21.1845" ry="22.0747" fill="#0E0D0D"/>
+                <g class="Eye_2">
+                <path class="Vector 6_2" d="M289.391 193.699C287.959 196.562 287.891 198.532 288.391 200.699C288.498 201.199 288.391 202.199 290.391 201.699C292.391 201.199 295.391 192.699 293.391 191.199C291.391 189.699 290.391 191.699 289.391 193.698L289.391 193.699Z" fill="white" stroke="white"/>
+                <g class="Vector 5_2">
+                <path d="M284.169 195.231C280.969 196.031 274.169 208.731 279.169 218.731C281.169 222.731 291.669 228.231 296.169 228.731C302.63 229.449 316.974 218.123 312.669 215.731C308.169 213.231 293.978 225.287 287.669 221.231C280.669 216.731 288.169 194.231 284.169 195.231Z" fill="white"/>
+                <path d="M287.169 215.231C285.169 212.031 286.336 207.898 287.169 206.231C287.169 207.564 287.469 209.831 288.669 212.231C290.169 215.231 292.169 215.231 293.169 215.231C298.268 215.231 302.669 210.731 300.669 214.231C299.069 217.031 295.669 218.231 294.669 218.231C293.003 218.564 289.169 218.431 287.169 215.231Z" fill="white"/>
+                <path d="M284.169 195.231C280.969 196.031 274.169 208.731 279.169 218.731C281.169 222.731 291.669 228.231 296.169 228.731C302.63 229.449 316.974 218.123 312.669 215.731C308.169 213.231 293.978 225.287 287.669 221.231C280.669 216.731 288.169 194.231 284.169 195.231Z" stroke="white"/>
+                <path d="M287.169 215.231C285.169 212.031 286.336 207.898 287.169 206.231C287.169 207.564 287.469 209.831 288.669 212.231C290.169 215.231 292.169 215.231 293.169 215.231C298.268 215.231 302.669 210.731 300.669 214.231C299.069 217.031 295.669 218.231 294.669 218.231C293.003 218.564 289.169 218.431 287.169 215.231Z" stroke="white"/>
+                </g>
+                </g>
+                </g>
+                <path class="left-arm" d="M136.77 249.309C130.437 230.642 11.6039 149.809 0.770408 209.809C-10.0631 269.809 96.2704 261.309 136.77 249.309Z" fill="#061a72"/>
+                </g>
+        </svg>                
+    </div>
+
     <script src="../dist/artik.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     <script src="test.js"></script>
-
+    <!-- You guys can turn this to Artiks -->
+    <script>
+        let penguin = document.getElementById('penguin-cursor');
+        const onMouseMove = (e) =>{
+        penguin.style.left = e.pageX + -40 +'px';
+        penguin.style.top = e.pageY + -40 + 'px';
+        }
+        window.addEventListener('mousemove', onMouseMove);
+    
+    </script>
 </body>
 </html>

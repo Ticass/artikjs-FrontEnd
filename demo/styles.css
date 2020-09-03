@@ -157,6 +157,15 @@ body {
     margin-bottom:20vh;
 }
 
+.text-emphasis{
+    text-transform: uppercase;
+    text-decoration-color: cornflowerblue;
+}
+
+.text-underline {
+    text-decoration: underline wavy;
+    text-decoration-color: rgb(255, 166, 0);
+}
 .welcome-message-container .small-text{
     font-size:1.3rem;
     color:rgb(17, 66, 224);
@@ -177,6 +186,7 @@ body {
     transition: all 0.5s;
     text-transform: uppercase;
     margin-bottom:40px;
+    border-radius: 3px;
     }
   
 .demo-button:hover {

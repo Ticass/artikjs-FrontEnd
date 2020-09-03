@@ -1,0 +1,39 @@
+body {
+    cursor:none;
+}
+
+#penguin-cursor {
+    position: absolute;
+    z-index:-1;
+}
+
+.right-arm{
+    animation: rightArm 0.2s infinite;
+    transform-origin: center;
+    transform-box: stroke-box;
+    cursor:none;
+}
+
+.left-arm{
+    animation: leftArm 0.2s infinite;
+    transform-origin: center;
+    transform-box: stroke-box;
+}
+
+@keyframes rightArm {
+    0%{
+        transform: rotateZ(-25deg);
+    }
+    50% {
+        transform: rotateZ(25deg);
+    }
+}
+
+@keyframes leftArm {
+    0% {
+        transform: rotateZ(25deg);
+    }
+    50% {
+        transform: rotateZ(-25deg);
+    }
+}
